@@ -1,33 +1,42 @@
 /* styles.css */
 
+/* Make the background and text more vibrant */
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh; 
-  margin: 0;
+  background-color: #f0f4f8;
+  color: #222;
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  flex: auto; 
-}
-
-
-article {
-  flex: 2; 
-  overflow-y: auto; 
-  padding: 1rem;
-}
-
-aside {
-  flex: 1; 
-  overflow-y: auto; 
-  padding: 1rem;
-}
-
+/* Style header and footer */
 header, footer {
+  background-color: #004080;
+  color: white;
   padding: 1rem;
-  background-color: #eee;
   text-align: center;
+}
+
+/* Style the logo */
+.logo {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+/* Style article content */
+article {
+  background-color: #ffffff;
+  border-right: 2px solid #ccc;
+  padding: 1rem;
+  line-height: 1.6;
+}
+
+/* Style aside content */
+aside {
+  background-color: #e6f2ff;
+  padding: 1rem;
+  border-left: 2px solid #ccc;
+}
+
+/* Add hover effect to links */
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
 }
