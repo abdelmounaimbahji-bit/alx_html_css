@@ -228,3 +228,51 @@ main > section:first-child > div:last-child p {
     font-size: 0.9rem;
     font-style: italic;
 }
+
+/* Section Témoignage */
+main > section:nth-child(2) {
+    background: var(--primary-color);
+    padding: 4rem 5%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    color: var(--text-light);
+}
+
+main > section:nth-child(2) > div:first-child {
+    flex: 1;
+    max-width: 400px;
+}
+
+main > section:nth-child(2) > div:last-child {
+    flex: 2;
+}
+
+main > section:nth-child(2) blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    position: relative;
+}
+
+main > section:nth-child(2) blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: -2rem;
+    top: -1rem;
+    opacity: 0.3;
+}
+
+main > section:nth-child(2) h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+main > section:nth-child(2) p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+}
+
